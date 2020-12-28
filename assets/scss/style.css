@@ -273,6 +273,11 @@ a {
   margin-right: 1.2rem;
 }
 
+.subBtn {
+  -webkit-transform: translate(-10px, 0);
+          transform: translate(-10px, 0);
+}
+
 .main {
   height: 100%;
   width: 100%;
