@@ -50,6 +50,8 @@ a {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
+  max-width: 50%;
+  width: 100%;
 }
 
 .align-center {
