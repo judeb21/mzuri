@@ -390,6 +390,9 @@
 }
 
 .consultant {
+    &__text {
+        transform: translateY(-90%);
+    }
     &-header {
         width: 90%;
         & span {
