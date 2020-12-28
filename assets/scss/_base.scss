@@ -1,0 +1,32 @@
+@import '../scss/var';
+
+$primary_font: 'Lato', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*::before,
+ *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary_font;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+    background: $dark-white;
+}
+
+html {
+    text-size-adjust: 100%;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-gray;
+}

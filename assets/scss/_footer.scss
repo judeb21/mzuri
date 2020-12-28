@@ -1,0 +1,45 @@
+@import '../scss/var';
+
+.footer {
+    height: 100%;
+    width: 100%;
+    background: $black;
+    padding: 3rem 0;
+    color: $white;
+
+    & .col-4 {
+        & h4 {
+            font-size: 20px;
+        }
+        & ul {
+            list-style: none;
+            margin-top: 1.3rem;
+
+            & li {
+                padding: .3rem 0;
+                color: $white;
+
+                & a {
+                    color: $white;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.social-icon {
+
+    & ul {
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        & li:not(:first-child) {
+            margin-left: 1.6rem;
+        }
+    }
+}
+
+.not-footer .playstoreIcon {
+    height: 45px;
+}
