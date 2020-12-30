@@ -1268,6 +1268,12 @@ a {
   opacity: 1;
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  .paginate__prev {
+    display: none;
+  }
+}
+
 .paginate__next {
   font-weight: 400;
   font-size: 18px;
@@ -1283,6 +1289,12 @@ a {
 
 .paginate__next.active:active {
   content: '';
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .paginate__next {
+    display: none;
+  }
 }
 
 .paginate__next.active::after {

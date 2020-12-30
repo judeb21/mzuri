@@ -585,6 +585,10 @@
         &.active {
             opacity: 1;
         }
+
+        @include media(">=phone", "<=tablet") {
+            display: none;
+        }
     }
     &__next {
         font-weight: 400;
@@ -598,6 +602,10 @@
             &:active {
                 content: '';
             }
+        }
+
+        @include media(">=phone", "<=tablet") {
+            display: none;
         }
     }
 }
