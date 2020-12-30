@@ -9,7 +9,7 @@ $primary_font: 'Lato', sans-serif;
 }
 
 *::before,
- *::after {
+*::after {
     box-sizing: border-box;
 }
 
@@ -19,6 +19,7 @@ body {
     text-rendering: optimizeLegibility;
     line-height: 1.5;
     background: $dark-white;
+    overflow-x: hidden;
 }
 
 html {

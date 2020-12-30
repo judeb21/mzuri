@@ -7,6 +7,12 @@
     padding: 3rem 0;
     color: $white;
 
+    &__div {
+        @include media(">=phone", "<desktop") {
+            flex-direction: column;
+        }
+    }
+
     & .col-4 {
         & h4 {
             font-size: 20px;
@@ -42,4 +48,8 @@
 
 .not-footer .playstoreIcon {
     height: 45px;
+
+    @include media(">=phone", "<=tablet") {
+        height: 50px;
+    }
 }
