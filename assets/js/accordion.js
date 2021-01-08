@@ -1,16 +1,17 @@
 'use strict';
 
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
+$(document).ready(function(){
+  $('.accordion__list > .accordion__content > .accordion__panel').hide();
+    
+  $('.accordion__list > .accordion__content').click(function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active").find(".accordion__panel").slideUp();
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+      $(".accordion__list > .accordion__content.active .accordion__panel").slideUp();
+      $(".accordion__list > .accordion__content.active").removeClass("active");
+      $(this).addClass("active").find(".accordion__panel").slideDown();
+    }
+    return false;
   });
-}
+  
+});
