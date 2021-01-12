@@ -38,6 +38,10 @@
             position: relative;
         }
 
+        @include media(">=tablet", "<=850px") {
+            transform: translateY(-30%);
+        }
+
         & h1 {
             font-weight: 700;
             font-size: 40px;
@@ -117,6 +121,7 @@
             @include media(">=desktop", "<1200px") {
                 transform: translateX(0);
                 width: 100%;
+                height: 100%;
             }
         }
     }
@@ -357,6 +362,9 @@
         & .col-3:nth-child(3),
         & .col-3:nth-child(6) {
             margin-right: 0;
+            @include media(">=tablet", "<=900px") {
+                margin-right: 3%;
+            }
         }
         &__col {
             padding: 1.7rem .9rem;
@@ -378,6 +386,12 @@
 
     @include media(">=phone", "<=992px") {
         display: none;
+    }
+}
+
+.how-it-works__step {
+    @include media(">=tablet", "<=900px") {
+        flex-direction: column;
     }
 }
 
@@ -1113,7 +1127,7 @@
 .why__choose_us {
     position: relative;
 
-    @include media(">=phone", "<=tablet") {
+    @include media(">=phone", "<=900px") {
         flex-direction: column;
     }
 
@@ -1122,7 +1136,8 @@
         max-width: 45%;
         width: 100%;
         margin-right: 5%;
-        @include media(">=phone", "<=tablet") {
+        
+        @include media(">=phone", "<=900px") {
             flex: 1;
             max-width: 100%;
             margin-right: 0;
@@ -1179,7 +1194,7 @@
 }
 
 .who__we__are {
-    @include media(">=phone", "<=tablet") {
+    @include media(">=phone", "<=900px") {
         flex-direction: column;
     }
 }
@@ -1192,6 +1207,11 @@
         max-width: 45%;
         width: 100%;
         margin-right: 5%;
+
+        @include media(">=tablet", "<=900px") {
+            flex: 1;
+            max-width: 90%;
+        }
 
         @include media(">=phone", "<=tablet") {
             flex: 1;
@@ -1215,8 +1235,8 @@
         display: flex;
         flex-flow: row wrap;
         margin-bottom: 3rem;
-
-        @include media(">=phone", "<=tablet") {
+        
+        @include media(">=phone", "<=900px") {
             flex: 1;
             max-width: 100%;
         }

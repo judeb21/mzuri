@@ -9,7 +9,7 @@
     }
 
     @include media(">tablet", "<=992px") {
-        padding: 0 4rem;
+        padding: 0 3rem;
     }
 
     @include media(">=desktop", "<=1200px") {
@@ -37,6 +37,11 @@
     @include media(">=phone", "<=tablet") {
         flex: 1;
         max-width: 100%;
+    }
+
+    @include media(">tablet", "<=850px") {
+        flex: 1;
+        max-width: 70%;
     }
 }
 
@@ -262,6 +267,11 @@
     width: 100%;
     padding: .3rem;
 
+    @include media(">=tablet", "<=900px") {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
     @include media(">=phone", "<=tablet") {
         flex: 1;
         max-width: 100%;
@@ -275,7 +285,7 @@
     width: 100%;
     padding: .3rem 0;
 
-    @include media(">=phone", "<=tablet") {
+    @include media(">=phone", "<=900px") {
         flex: 1;
         max-width: 100%;
     }
