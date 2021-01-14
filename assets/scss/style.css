@@ -609,7 +609,7 @@ a {
   padding-top: 5%;
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1500px) {
   .hero__header {
     padding-top: 2%;
   }

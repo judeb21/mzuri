@@ -20,7 +20,7 @@
         height: 665px;
         padding-top: 5%;
 
-        @include media(">=2000px") {
+        @include media(">=1500px") {
             padding-top: 2%;
         }
         @include media(">=tablet", "<=992px") {
