@@ -19,10 +19,10 @@
         height: 665px;
         padding-top: 5%;
 
-        @include media(">=phone", "<=tablet") {
+        @include media(">=phone", "<tablet") {
             padding-top: 15%;
         }
-        @include media(">tablet", "<=992px") {
+        @include media(">=tablet", "<=992px") {
             padding-top: 4%;
             height: 450px;
         }
@@ -80,7 +80,7 @@
 
         @include media(">=phone", "<=tablet") {
             flex-direction: column;
-            transform: translate(0, -80px);
+            transform: translate(0, -20px);
         }
         @include media(">tablet", "<=992px") {
             flex-direction: column;
@@ -1351,11 +1351,11 @@
 }
 
 .m__text {
-    @include media(">=phone", "<=tablet") {
+    @include media(">=phone", "<tablet") {
         transform: translateY(-65%);
     }
-    @include media(">tablet", "<=992px") {
-        transform: translateY(-225%);
+    @include media(">=tablet", "<=992px") {
+        transform: translateY(-35%);
     }
 
     & .form__item {
@@ -1491,4 +1491,10 @@ ul.accordion-list {
 
 .about__text {
     transform: translateY(-120%);
+}
+
+.m-hero-search__form {
+    @include media(">=phone", "<=tablet") {
+        transform: translate(0, -135px);
+    }
 }
