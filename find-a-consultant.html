@@ -85,15 +85,26 @@
                 <div class="hero__text consultant__text m__text">
                     <div class="container relative">
                         <h1>Find A Consultant</h1>
-                        <p class="w-60">Ut phasellus sagittis cursus cursus vitae tincidunt. Sit velit et orci non. 
-                            Mauris tempus a vulputate eget eu sed enim facilisi nulla. Elit suspendisse ultricies cras in.                            
+                        <p class="w-60 mb-5">
+                            We can assist you in every way possible to find a consultant who will help resolve business related issues as they arise.                            
                         </p>
-                        <form class="hero__form subscription__form">
+                        <form class="hero__form hero-search__form flex justify-between">
                             <div class="form__item">
-                                <label for="search" class="sr-only">Email</label>
-                                <input type="text" class="input form__input" id="search" required placeholder="Type anything...">
-                                <button class="btn btn__sub">Search</button>
+                                <label for="consultant" class="sr-only">Email</label>
+                                <select name="consultant" id="consultant" class="input form__input">
+                                    <option value="Select Consultant" selected>Select Consultant</option>
+                                    <option value="option 1">Option 1</option>
+                                    <option value="option 2">Option 2</option>
+                                </select>
                             </div>
+                            <div class="form__item">
+                                <label for="consultant" class="sr-only">Email</label>
+                                <select name="consultant" id="consultant" class="input form__input">
+                                    <option value="Select your location" selected>Select your location</option>
+                                    <option value="option 2">Option 2</option>
+                                </select>
+                            </div>
+                            <button class="btn btn__standard">Search</button>
                         </form>
                     </div>
                 </div> 
@@ -105,34 +116,32 @@
             <div class="container">
                 <div class="subscription flex justify-center text__center">
                     <h4>How It Works</h4>
-                    <p class="w-75">Mauris tempus a vulputate eget eu sed enim facilisi nulla. Elit suspendisse Mauris tempus a vulputate eget eu sed enim facilisi nulla. Elit suspendisse ultricies cras in. ultricies cras in.</p>
+                    <p class="w-75">
+                        The Mzuri Business Application provides an interface where users capture business transaction data (sales, expenses, inventory, loan booking. equity financing, tax payments, etc). All the data captured will eventually be used to prepare and display all relevant business reports and insights; perform tax computations, remittances and filing for SMEs.
+                    </p>
                 </div>
 
                 <div class="subscription flex justify-center text__center mt-3">
                     <h4>Our Consultant</h4>
-                    <p class="w-75">Mauris tempus a vulputate eget eu sed enim facilisi nulla. Elit suspendisse Mauris tempus a vulputate eget eu sed enim facilisi nulla. Elit suspendisse ultricies cras in. ultricies cras in.</p>
+                    <p class="w-75">A community of experts across different fields (audit, tax, legal, advisory, etc) is hosted on the application and can be accessible by all active users for support purposes.</p>
                 </div>
 
                 <div class="subscription flex mt-4">
                     <div class="consultance-container flex align-center">
                         <div class="consultance-container__body pr-5">
-                            <h2>Accountant</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Ac cursus faucibus sit nunc, morbi quam turpis. Enim est, consequat, sem ac amet Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Ac cursus faucibus sit nunc, morbi quam turpis. Enim est, consequat, sem ac amet, elit, eu consequat. , elit, eu consequat. 
+                            <h2>Auditors</h2>
+                            <p>These set of consultants review the financial records as well as provide guidance on how best to maintain our financial records. The outcome of their support is to ensure that the  financial reports are TRUE and FAIR.
                             </p>
                             <a href="" class="btn btn__standard">Search Now</a>
                         </div>
                         <div class="consultance-container__img">
-                            <img src="assets/img/Accountant.svg" alt="Accountant">                                  
+                            <img src="assets/img/Accountant.svg" alt="Auditor">                                  
                         </div>
                     </div>
                     <div class="consultance-container flex align-center flow-reverse mt-4">
                         <div class="consultance-container__body pl-5">
-                            <h2>Auditor</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Ac cursus faucibus sit nunc, morbi quam turpis. Enim est, consequat, sem ac amet Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Ac cursus faucibus sit nunc, morbi quam turpis. Enim est, consequat, sem ac amet, elit, eu consequat. , elit, eu consequat. 
+                            <h2>Business Advisers</h2>
+                            <p>Experts in various fields like law, finance, trade, technology, etc, who will provide direction on how best to manage a business.
                             </p>
                             <a href="" class="btn btn__standard">Search Now</a>
                         </div>
@@ -143,9 +152,7 @@
                     <div class="consultance-container flex align-center mt-4 mb-5">
                         <div class="consultance-container__body pr-5">
                             <h2>Tax Specialist</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Ac cursus faucibus sit nunc, morbi quam turpis. Enim est, consequat, sem ac amet Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Ac cursus faucibus sit nunc, morbi quam turpis. Enim est, consequat, sem ac amet, elit, eu consequat. , elit, eu consequat. 
+                            <p>These set of consultants provide guidance on how to compute, remit and file tax returns to different tax authorities. They will help resolve all kinds of issues regarding tax processes.
                             </p>
                             <a href="" class="btn btn__standard">Search Now</a>
                         </div>
@@ -162,7 +169,7 @@
             <div class="container">
                 <div class="subscription flex justify-center">
                     <h4>Subscription to our newsletter</h4>
-                    <p>To get daily rate and update from the market.</p>
+                    <p>Subscribe to our newsletter so you can be the first to know about any latest news or updates in the Mzuri Application.</p>
                     <form action="" class="subscription__form">
                         <div class="form__item">
                             <label for="email" class="sr-only">Email</label>

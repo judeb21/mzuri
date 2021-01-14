@@ -188,9 +188,20 @@
         font-weight: 400;
         font-size: 18px;
 
+        @include media(">1200px") {
+            text-align: center;
+            width: 60%;
+        }
+
+        @include media(">=992px") {
+            text-align: center;
+            width: 80%;
+        }
+
         @include media(">=phone", "<=tablet") {
             text-align: center;
             font-size: 16px;
+            width: 90%;
         }
 
         @include media("<=phone") {
@@ -265,6 +276,13 @@
         & h1 {
             font-size: 25px;
             font-weight: 700;
+            padding: 0 10rem;
+            @include media(">tablet", "<=1024px") {
+                padding: 0 4rem;
+            }
+            @include media(">=phone", "<=tablet") {
+                padding: 0;
+            }
         }
 
         & p {
@@ -426,6 +444,8 @@
         & p {
             text-align: center;
             color: $light-gray;
+            width: 100%;
+            font-size: 16px;
         }
     }
 }
@@ -488,6 +508,7 @@
                 color: $light-gray;
                 padding: 0 0 2rem 0;
                 margin: 1rem 0;
+                text-align: left;
             }
         }
 
@@ -675,7 +696,7 @@
 
 .consultant {
     &__text {
-        transform: translateY(-90%);
+        transform: translateY(-80%);
 
         @include media(">=phone", "<=tablet") {
             position: absolute;
@@ -1186,6 +1207,7 @@
     & h4 {
         margin-bottom: .5rem;
         font-size: 18px;
+        text-transform: capitalize;
     }
     & p {
         font-size: 16px;
@@ -1465,4 +1487,8 @@ ul.accordion-list {
             }
         }
     }
+}
+
+.about__text {
+    transform: translateY(-120%);
 }
