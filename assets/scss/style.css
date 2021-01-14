@@ -597,7 +597,6 @@ a {
 .home__banner {
   height: 740px;
   width: 100%;
-  background: #24ABDC;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(22.4%, #0CA2D9), color-stop(83.85%, #0077A3));
   background: linear-gradient(180deg, #0CA2D9 22.4%, #0077A3 83.85%);
   -webkit-box-shadow: 0px 0px 0px rgba(63, 63, 68, 0.05), 0px 0.84px 2.52px rgba(63, 63, 68, 0.15);
