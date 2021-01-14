@@ -606,9 +606,9 @@ a {
   padding-top: 5%;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 2000px) {
   .hero__header {
-    padding-top: 15%;
+    padding-top: 2%;
   }
 }
 
@@ -616,6 +616,12 @@ a {
   .hero__header {
     padding-top: 4%;
     height: 450px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .hero__header {
+    padding-top: 15%;
   }
 }
 
